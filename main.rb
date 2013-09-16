@@ -1,6 +1,7 @@
 require 'sinatra'
 require 'active_support/all'
 require 'active_record'
+require 'pg'
 
 # AUTHENTICATION
 require 'digest/sha2'
