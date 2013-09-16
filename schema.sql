@@ -2,7 +2,7 @@ CREATE TABLE breweries (
     id SERIAL PRIMARY KEY,
     name VARCHAR(30) NOT NULL,
     city VARCHAR(30) NOT NULL,
-    state VARCHAR(30) NOT NULL
+    state VARCHAR(30) NOT NULL,
     created_at TIMESTAMP DEFAULT now()
 );
 
