@@ -1,0 +1,32 @@
+body {
+  width: 940px;
+  margin: 0px auto;
+  background: url(https://farm4.static.flickr.com/3178/2599701672_18a5e68928_b.jpg) fixed;
+  font-family: inconsolata;
+}
+
+#cabeza {
+  margin-top: 10px;
+  text-align: center;
+  background: white;
+  padding: 5px 5px;
+}
+
+#cabeza li {
+  display: inline;
+}
+
+#contenedor {
+  text-align: center;
+  background: white;
+}
+
+hr {
+  background: blue;
+}
+
+li {
+  list-style-type: none;
+}
+
+

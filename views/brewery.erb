@@ -1,0 +1,23 @@
+<h2><%= @brewery.name %></h2>
+<p>Location: <%= @brewery.city %>, <%= @brewery.state %></p>
+<p>Added: <%= @brewery.created_at %></p>
+<a href="/brewery/<%= @brewery.id %>/edit" >Edit</a> | <a href="/">Home</a>
+<br>
+<form action='/brewery/<%= @brewery.id %>/delete' method='post'>
+    <button>Delete</button>
+</form>
+
+<h3>Beers | <a href="/brewery/<%= @brewery.id %>/new_beer">Add Beer</a></h3>
+
+<ul>
+    <% @brewery.beers.each do |beer| %>
+    <li><b>Name</b>: <%= beer.name %></li>
+    <li><b>Style</b>: <%= beer.style %></li>
+    <li><b>ABV</b>: <%= beer.abv %>%</li>
+    <li><img src='<%= beer.url %>'></li>
+    <% end %>
+</ul>
+
+
+
+

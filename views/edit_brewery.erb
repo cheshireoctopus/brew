@@ -1,0 +1,17 @@
+<form method="post" action="/brewery/<%= @brewery.id %>">
+    <div>
+        <label>Brewery Name: </label>
+        <input type="text" name="brewery[name]" value="<%= @brewery.name %>" autofocus />
+    </div>
+    <div>
+        <label>City: </label>
+        <input type="text" name="brewery[city]" value="<%= @brewery.city %>" />
+    </div>
+    <div>
+        <label>State: </label>
+        <input type="text" name="brewery[state]" value="<%= @brewery.state %>" />
+    </div>
+    <button type="submit">Submit</button>
+    <br>
+    <a href="/brewery/<%= @brewery.id %>/delete" >Delete</a> | <a href="/" >Cancel</a>
+</form>

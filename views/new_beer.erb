@@ -1,0 +1,15 @@
+<form method="post" action="/brewery/<%= @brewery.id %>/new_beer">
+    <label>Beer Name: </label>
+    <input type="text" name="beer[name]" autofocus />
+    <br>
+    <label>Style: </label>
+    <input type="text" name="beer[style]"  />
+    <br>
+    <label>ABV: </label>
+    <input type="text" name="beer[abv]"  />
+    <br>
+    <labe>Image(URL): </label>
+    <input type="text" name="beer[url]" />
+    <br>
+    <button>Add Beer</button>
+</form>

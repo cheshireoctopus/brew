@@ -1,0 +1,11 @@
+<div class="breweries">
+    <% @brew_list.each do |brewery| %>
+    <div class="brewery">
+        <h2 class="brew_name"><a href="/brewery/<%= brewery.id%>"><%= brewery.name %></a></h2>
+        <p class="brew_location"><b>Location: </b><%= brewery.city %>, <%= brewery.state %></p>
+        <p class="brew_create"><b>Added: </b><%= brewery.created_at %></p>
+    </div>
+    <% end %>
+</div>
+
+
