@@ -19,6 +19,8 @@ ActiveRecord::Base.establish_connection(
 
 ActiveRecord::Base.logger = Logger.new(STDOUT)
 
+ActiveRecord::Base.establish_connection(ENV['HEROKU_POSTGRESQL_NAVY_URL'] || 'postgres://localhost/brew')
+
 require_relative './models/brewery'
 require_relative './models/beer'
 
